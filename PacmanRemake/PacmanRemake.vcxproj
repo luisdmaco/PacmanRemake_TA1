@@ -115,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bonus.h" />
+    <ClInclude Include="Controller.h" />
     <ClInclude Include="Fantasma.h" />
     <ClInclude Include="Pacdots.h" />
     <ClInclude Include="Pacman.h" />
