@@ -59,7 +59,7 @@ public:
 		dx = 1;
 		dy = 1;
 	}
-	Rectangle hitbox() {
+	Rectangle getHitbox() {
 		return Rectangle(x, y, ancho, largo);
 	}
 	void setVida(int vidaux) {

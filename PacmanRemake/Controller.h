@@ -77,7 +77,7 @@ public:
 	void colision() {
 		for (int i = 0; i < 4; i++)//pacman-fantasma
 		{
-			if (pacman->hitbox().IntersectsWith(fantasmas[i]->getHitbox())) {
+			if (pacman->getHitbox().IntersectsWith(fantasmas[i]->getHitbox())) {
 				fantasmas[i]->changeDirection();
 				pacman->setVida((pacman->getVida()) - 1);
 				cout << "\a";
@@ -86,7 +86,7 @@ public:
 		}
 		for (int i = 0; i < dots.size(); i++)//pacman-dots
 		{
-			if (pacman->hitbox().IntersectsWith(dots[i]->getHitbox())) {
+			if (pacman->getHitbox().IntersectsWith(dots[i]->getHitbox())) {
 				dots[i]->borrar();
 				dots.erase(dots.begin() + i);
 				puntos++;
@@ -94,7 +94,7 @@ public:
 		}
 		for (int i = 0; i < bonus.size(); i++)//pacman-bonus
 		{
-			if (pacman->hitbox().IntersectsWith(bonus[i]->getHitbox())) {
+			if (pacman->getHitbox().IntersectsWith(bonus[i]->getHitbox())) {
 				bonus[i]->borrar();
 				bonus.erase(bonus.begin() + i);
 				pacman->boostspeed();
